@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "elytraswap",
+  "version": "${version}",
+  "name": "Elytra Swap",
+  "description": "Hotkey (Standard: X), um direkt zwischen Brustplatte und Elytra zu wechseln.",
+  "authors": ["du"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.elytraswap.ElytraSwap"],
+    "client": ["com.example.elytraswap.ElytraSwapClient"]
+  },
+  "depends": {
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabricloader": ">=0.19.5",
+    "fabric-api": "*"
+  }
+}
