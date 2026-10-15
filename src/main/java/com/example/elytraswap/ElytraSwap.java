@@ -7,8 +7,5 @@ public class ElytraSwap implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        // Alles läuft jetzt clientseitig in ElytraSwapClient
-    }
-}
     }
 }
