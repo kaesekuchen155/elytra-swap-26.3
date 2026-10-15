@@ -19,7 +19,7 @@ public class ElytraSwap implements ModInitializer {
     @Override
     public void onInitialize() {
         // Falls dieser Methodenname nicht existiert: serverboundPlay() verwenden
-        PayloadTypeRegistry.playC2S().register(SwapPayload.TYPE, SwapPayload.CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(SwapPayload.TYPE, SwapPayload.CODEC);
 
         ServerPlayNetworking.registerGlobalReceiver(SwapPayload.TYPE,
                 (payload, context) -> swap(context.player()));
